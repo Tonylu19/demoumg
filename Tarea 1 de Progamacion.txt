@@ -1,0 +1,49 @@
+//Marco Antonio Salvatierra Salas, 1190-22-10134 
+
+#include <iostream>
+
+
+using namespace std;
+
+class Persona{
+	 
+	 private: //son los atributos de la clase
+	 int edad;
+	 string nombre;
+	 
+	 public: // los metodos de la clase 
+	 	Persona(int,string); //es el contructor de la clase
+	 	void telefono();
+		void fechadenacimiento();	
+	 
+};
+
+//nos sirve para iniciar los atributos
+Persona::Persona(int _edad, string _nombre){
+	edad = _edad;
+	nombre = _nombre;
+}
+
+void Persona::telefono(){
+	cout<<" Soy " <<nombre<< " mi numero telefonico es el 36304135"<<endl;
+	
+}
+
+void Persona::fechadenacimiento(){
+	cout<<" Soy " <<nombre<< " mi fecha de nacimiento es el 19/06/2001"<<endl;
+	
+}
+
+int main(){
+	
+	Persona no1= Persona(21,"Marco Antonio");
+	Persona no2= Persona(21, "Hector Ernesto");
+	
+	
+	no1.telefono();
+	no2.fechadenacimiento();
+
+
+	system("pause");
+	return 0;
+}
